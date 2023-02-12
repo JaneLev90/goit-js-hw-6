@@ -13,7 +13,7 @@
 
 const text = document.querySelector('#text');
 const rng = document.querySelector('#font-size-control');
-
+text.style.fontSize = "40px";
 rng.addEventListener('change', () => {
     text.style.fontSize = rng.value+'px';
 });
