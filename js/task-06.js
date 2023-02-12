@@ -1,24 +1,23 @@
-// const inputText = document.querySelector('#validation-input');
-// inputText.addEventListener('blur', onInputTextSymbols);
 
-// console.log(inputText)
+ const inputEl = document.querySelector('#validation-input');
+inputEl.addEventListener('blur', changeBorder)
+ 
 
-// const inputBorderValid = document.querySelector('style');
-// console.log(inputBorderValid.textContent)
-// const inputBorderInvalid = document.querySelector('style');
 
-//  function onInputTextSymbols (event) {
+ function changeBorder (event) {
+    const dataLength = inputEl.getAttribute("data-length");
+//  console.log(dataLength)
+    const textLength = inputEl.value.length;
+    //  console.log (textLength)
+ 
+    if (textLength == dataLength){
+   
+    inputEl.classList.add("valid");
+   
+ }
+else{
+    inputEl.classList.add("invalid");
 
-// // event.style.borderColor = 
-
-//  }
-
- const inputText = document.querySelector('#validation-input');
-
-inputText.addEventListener('blur', () => {
-    const textLength = inputText.value.length;
-    console.log(textLength);
-    // console.log(inputText.value.length);
-    style.border
-    inputText.style.border = "3px solid red";
-});
+}
+  
+};
