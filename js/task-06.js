@@ -6,9 +6,9 @@ inputEl.addEventListener('blur', changeBorder)
 
  function changeBorder (event) {
     const dataLength = inputEl.getAttribute("data-length");
-//  console.log(dataLength)
+  console.log(dataLength)
     const textLength = inputEl.value.length;
-    //  console.log (textLength)
+      console.log (textLength)
  
     if (textLength == dataLength){
    
