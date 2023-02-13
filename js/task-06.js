@@ -4,20 +4,18 @@ inputEl.addEventListener('blur', changeBorder)
  
 
 
- function changeBorder (event) {
+ function changeBorder () {
     const dataLength = inputEl.getAttribute("data-length");
-  console.log(dataLength)
+  // console.log(dataLength)
     const textLength = inputEl.value.length;
-      console.log (textLength)
+      // console.log (textLength)
  
-    if (textLength == dataLength){
+    if (textLength != dataLength){
    
-    inputEl.classList.add("valid");
+    inputEl.classList.add("invalid");
    
  }
-else{
-    inputEl.classList.add("invalid");
 
-}
+    inputEl.classList.add("valid");
   
 };
