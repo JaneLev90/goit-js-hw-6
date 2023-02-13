@@ -4,7 +4,7 @@ const inputEl = document.querySelector("#name-input");
 const userNameEl = document.querySelector("#name-output");
 
 inputEl.addEventListener("input", function (event) {
-  if (event.currentTarget.value.trim() != "") {
+  if (event.currentTarget.value.trim() !== "") {
     userNameEl.textContent = event.currentTarget.value;
   } 
    else{
