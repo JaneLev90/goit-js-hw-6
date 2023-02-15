@@ -40,13 +40,19 @@ inputEl.addEventListener("input", function (event) {
   if (!inputEl.value) {
     return;
   }
+  
   if (event.currentTarget.value) {
     userNameEl.textContent = event.currentTarget.value.trim();
   } else {
     userNameEl.textContent = event.currentTarget.value;
   }
 
+  // if (inputEl.value) {
+  //   userNameEl.textContent = inputEl.value.trim();
+  //    }
+
 });
+
 
 
 
